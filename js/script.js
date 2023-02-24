@@ -29,3 +29,21 @@ if (playerInput == '1') {
 }
 
 printMessage('Your move: ' + playerMove);
+
+if (computerMove == 'stone' && playerMove == 'paper') {
+    printMessage('You won!');
+} else if (computerMove == 'paper' && playerMove == 'scissors') {
+    printMessage('You won!');
+} else if (computerMove == 'scissors' && playerMove == 'stone') {
+    printMessage('You won!');
+} else if (computerMove == 'paper' && playerMove == 'paper') {
+    printMessage('You have a draw!');
+} else if (computerMove == 'scissors' && playerMove == 'scissors') {
+    printMessage('You have a draw!');
+} else if (computerMove == 'stone' && playerMove == 'stone') {
+    printMessage('You have a draw!');
+} else if (playerMove == 'unknown move') {
+    printMessage('Please choose from 1 to 3!');
+} else {
+    printMessage('You lost!');
+}
